@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Directorio de estudiantes
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Juan</th>
+          <td>30</td>
+          <td>juan@example.com</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="2">María</th>
+          <td rowspan="2">25</td>
+          <td>maria@example.com</td>
+        </tr>
+        <tr>
+          <td>maria2@example.com</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Tabla con 2 entradas</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
