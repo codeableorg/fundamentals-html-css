@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Elements</title>
+  </head>
+  <body>
+    <h1>Media Elements</h1>
+    <!-- audio  -->
+    <div>
+      <audio controls loop preload="metadata">
+        <source src="./creative-technology-showreel-audio.mp3" />
+      </audio>
+    </div>
+
+    <!-- video  -->
+    <div>
+      <video width="300" autoplay muted loop poster="./loading.gif">
+        <source src="./hello_word.webm" />
+        <source src="./hello_word.mp4" />
+        <img
+          width="300"
+          src="./fallback.png"
+          alt="Reproduccion fallida por falta de soporte en el navegador"
+        />
+      </video>
+    </div>
+  </body>
+</html>
