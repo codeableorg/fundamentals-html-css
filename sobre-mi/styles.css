@@ -1,0 +1,18 @@
+span {
+  color: blue;
+}
+
+h1.encabezado,
+h2.encabezado,
+a {
+  color: blue;
+}
+
+/* .encabezado {
+  color: red;
+  background-color: beige;
+}
+
+[src*="archivos"] {
+  border: 3px solid blue;
+} */
