@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* html {
+        font-size: 1px;
+      } */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      h1 {
+        margin: 0;
+      }
+
+      p {
+        /* 16px = 1rem */
+        font-size: 2ch;
+        width: 50%;
+        border: 1px dashed black;
+        padding: 0;
+        line-height: 2;
+        font-weight: 400;
+      }
+      .container {
+        width: 500px;
+        height: 100vh;
+        font-size: 20px;
+        background-color: bisque;
+      }
+      .loading {
+        width: 100px;
+        height: 100px;
+        border: 15px solid white;
+        border-top: 15px solid gray;
+        border-radius: 100%;
+        animation: rotate linear 5s;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Units</h1>
+      <p>
+        0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia unde,
+        alias ab saepe repudiandae adipisci eligendi earum id ad perferendis
+        cupiditate blanditiis veritatis accusamus error iste quod rerum, fuga
+        deleniti?
+      </p>
+      <div class="loading"></div>
+    </div>
+  </body>
+</html>
