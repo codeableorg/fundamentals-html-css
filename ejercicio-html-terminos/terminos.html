@@ -8,9 +8,11 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Términos y condiciones</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./estilos.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <header>
         <h1 id="header">Términos y Condiciones de FullStock</h1>
         <p>
@@ -75,9 +77,9 @@
         <table>
           <thead>
             <tr>
-              <th scope="col">Método de pago</th>
-              <th scope="col">Comisión</th>
-              <th scope="col">TIempo de procesamiento</th>
+              <th class="w__1-3" scope="col">Método de pago</th>
+              <th class="w__1-3" scope="col">Comisión</th>
+              <th class="w__1-3" scope="col">Tiempo de procesamiento</th>
             </tr>
           </thead>
           <tbody>
@@ -125,8 +127,12 @@
         <p>
           En FullStock nos enorgullecemos de la calidad de nuestros productos.
         </p>
-        <figure>
-          <img src="./garantia.png" alt="Sello de garantía y satisfacción" />
+        <figure class="guarantee-stamp__container">
+          <img
+            width="100%"
+            src="./garantia.png"
+            alt="Sello de garantía y satisfacción"
+          />
           <figcaption>
             Garantía de Satisfacción: Si no te gusta, ¡te devolvemos el dinero!
           </figcaption>
@@ -149,8 +155,8 @@
         <table>
           <thead>
             <tr>
-              <th scope="col">Región</th>
-              <th scope="col">Tiempo de Entrega Estimado</th>
+              <th class="w__1-2" scope="col">Región</th>
+              <th class="w__1-2" scope="col">Tiempo de Entrega Estimado</th>
             </tr>
           </thead>
           <tbody>
@@ -178,9 +184,13 @@
         <ul>
           <li>
             Email:
-            <a href="mailto:soporte@fullstock.com">soporte@fullstock.com</a>
+            <a href="mailto:soporte@fullstock.com"
+              ><em>soporte@fullstock.com</em></a
+            >
           </li>
-          <li>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></li>
+          <li>
+            Teléfono: <a href="tel:+1234567890"><em>+1 234 567 890</em></a>
+          </li>
         </ul>
         <p>
           O visita nuestra <a href="#">página de contacto</a> para más detalles.
