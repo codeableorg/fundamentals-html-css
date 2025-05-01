@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .contenedor-flex {
+        border: 3px solid black;
+        border-radius: 1rem;
+        background-color: rgb(174, 40, 174);
+        box-shadow: inset 2rem 2rem rgb(113, 25, 113);
+        height: 600px;
+
+        /* flexbox layout */
+        display: flex;
+
+        /* Definicion de direccion dominante */
+        flex-direction: row;
+
+        /* Organizacion de elementos */
+        /* en el eje dominante */
+        justify-content: start;
+
+        /* en el eje no dominante */
+        /* start, end, center, stretch, baseline */
+        align-items: center;
+
+        /* soporte para multilinea */
+        /* flex-wrap: wrap; */
+        align-content: center;
+
+        /* espaciamente entre elementos */
+        gap: 2rem 1rem;
+        /* row-gap: 1rem;
+        column-gap: 2rem; */
+      }
+      .elemento-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 3px solid black;
+        border-radius: 1rem;
+        background-color: rgb(231, 111, 26);
+        box-shadow: inset 1rem 1rem rgb(232, 157, 104);
+        width: 100px;
+        height: 100px;
+
+        /* flexbox advacned */
+        /* flex-basis, flex-grow, flex-shrink */
+        flex-basis: 100px;
+        flex-shrink: 0;
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <div class="contenedor-flex">
+      <div style="flex-shrink: 1" class="elemento-flex"><span>1</span></div>
+      <div class="elemento-flex"><span>2</span></div>
+      <div class="elemento-flex">
+        <span>3</span>
+      </div>
+      <div class="elemento-flex"><span>4</span></div>
+    </div>
+  </body>
+</html>
