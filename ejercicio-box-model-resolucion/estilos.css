@@ -16,8 +16,10 @@ body {
   border-left: 5px solid black;
   border-bottom: 5px solid black;
   border-radius: 16px;
-  max-width: 360px;
-  margin: 32px auto;
+  max-width: 400px;
+
+  flex-basis: 300px;
+  flex-grow: 1;
 }
 
 .card__title {
@@ -55,4 +57,18 @@ body {
 
 .author__name {
   font-size: 14px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card__container {
+  margin: auto;
+  max-width: 64rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: space-evenly;
 }
