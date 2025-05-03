@@ -1,0 +1,8 @@
+/* Capa que resetea o normaliza estilos de navegador */
+@import "./normalize.css";
+
+/* Capa que sirve de base y define estilos que se comparten entre paginas */
+@import "./base.css";
+
+/* Capas que sirven para estilos especificos */
+@import "./categories.css";
