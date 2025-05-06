@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fullstock-templates/assets/css/index.css" />
+    <style>
+      /* Clases para estilizado */
+      .section {
+        margin: auto;
+        max-width: 80rem;
+        padding: 1rem;
+      }
+      .container {
+        border: 2px solid black;
+        border-radius: 2rem;
+        overflow: hidden;
+      }
+      .sub-container {
+        min-height: 25rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .lottie-container {
+        background-color: rgb(232, 232, 74);
+      }
+
+      /* CLASES PARA MODIFICAR ESTILOS CON MEDIA QUERY */
+
+      /* Media query para tamaño de ventana */
+      @media (min-width: 768px) {
+        .container {
+          display: flex;
+        }
+        .sub-container {
+          width: 50%;
+        }
+        .text-container {
+          align-items: start;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          min-height: 35rem;
+        }
+      }
+
+      /* Media query para preferencia de color del usuario */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: rgb(47, 45, 51);
+          color: white;
+        }
+
+        .container {
+          border-color: rgb(170, 170, 170);
+        }
+
+        .text-container {
+          background-color: rgb(24, 24, 24);
+        }
+
+        .lottie-container {
+          background-color: rgb(207, 207, 47);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <h1>Media Queries</h1>
+      <div class="container">
+        <div class="sub-container lottie-container">
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+
+          <dotlottie-player
+            src="https://lottie.host/a2d1df3c-f314-46c5-8457-09812474c8a1/MFkTCu6VBc.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <div class="sub-container text-container">
+          <h2>Titulo</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            nemo optio culpa, doloribus qui veritatis esse, reprehenderit nobis
+            est mollitia unde inventore placeat blanditiis minus illum atque
+            magni natus iste!
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
