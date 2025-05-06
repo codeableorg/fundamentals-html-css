@@ -7,7 +7,7 @@
 
 .section__title {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
@@ -50,13 +50,15 @@
 }
 
 @media (min-width: 768px) {
+  .category__image {
+    aspect-ratio: 4/5;
+  }
+
   .section {
     padding: 2rem;
   }
-}
 
-@media (min-width: 1180px) {
-  .category__image {
-    aspect-ratio: 4/5;
+  .section__title {
+    font-size: 2.5rem;
   }
 }
