@@ -1,0 +1,48 @@
+/* layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form,
+.form-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input,
+label,
+button {
+  /* margin-bottom: 20px; */
+  padding: 0;
+}
+
+input#email {
+  width: 300px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  border: 1px solid gray;
+  background-color: white;
+  color: green;
+}
