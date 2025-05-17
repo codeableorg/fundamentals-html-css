@@ -29,6 +29,10 @@
   border-radius: 8px;
   color: white;
   margin-bottom: 24px;
+  transition: background-color 400ms;
+}
+.product-button:hover {
+  background-color: #5050d4;
 }
 .product-feature {
   color: #60646c;
