@@ -26,6 +26,11 @@
 .category {
   flex-basis: 328px;
   flex-grow: 1;
+  transition: transform 200ms;
+  transition-timing-function: ease-in;
+}
+.category:hover {
+  transform: translateY(-10px);
 }
 
 .category__image {

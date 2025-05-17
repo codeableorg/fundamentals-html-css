@@ -61,7 +61,7 @@
               </svg>
             </div>
             <div class="divider--vertical"></div>
-            <div class="icon-container">
+            <div class="icon-container" id="cart">
               <svg
                 width="24"
                 height="24"
@@ -92,5 +92,17 @@
         </div>
       </div>
     </header>
+    <button id="add-product">Add product</button>
+    <script>
+      const botonAddProduct = document.getElementById('add-product');
+      const cart = document.getElementById('cart');
+      botonAddProduct.addEventListener('click', () => {
+        cart.classList.add('animation')
+        setTimeout(()=> {
+          cart.classList.remove('animation')
+        },500)
+      })
+
+    </script>
   </body>
 </html>
