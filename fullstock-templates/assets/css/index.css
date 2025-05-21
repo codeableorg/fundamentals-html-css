@@ -6,10 +6,16 @@
 @import "./1-foundation/reset.css";
 
 /* Capa que sirve de base y define estilos que se comparten entre paginas */
-@import "./base.css";
+@import "./1-foundation/elements.css";
+
+/* Capa para layout */
+@import "./2-layouts/containers.css";
+@import "./2-layouts/sections.css";
 
 /* Capas que sirven para estilos especificos */
-@import "./header.css";
-@import "./categories.css";
-@import "./products.css";
-@import "./product.css"
+@import "./3-components/header.css";
+@import "./3-components/categories.css";
+@import "./3-components/login.css";
+@import "./3-components/products.css";
+@import "./3-components/product-card.css";
+@import "./3-components/subscribe.css";
