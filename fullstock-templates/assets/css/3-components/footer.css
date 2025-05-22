@@ -1,0 +1,19 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (min-width: 40rem) {
+  .footer-content {
+    flex-direction: row;
+  }
+  .footer-links {
+    flex-wrap: nowrap;
+  }
+}
