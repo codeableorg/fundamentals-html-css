@@ -4,70 +4,71 @@ footer {
   margin: 0 auto;
 }
 
-.footer-content {
+.footer__content {
   display: flex;
   flex-direction: column;
   padding: 3rem 0 0 0;
 }
 
-.footer-links {
+.footer__links {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1rem;
   row-gap: 2rem;
 }
 
-.footer-link-item {
+.footer__link-group {
   width: 9.75rem;
 }
 
-.title {
+.footer__link-title, .footer__subscribe-title {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--foreground);
 }
 
-.title,
-.link-list li {
+.footer__link-title,
+.footer__link-list li,
+.footer__subscribe-title {
   margin-bottom: 1.5rem;
 }
 
-.link,
-.copy,
-.description {
+.footer__link-item,
+.footer__copyright,
+.footer__subscribe-description {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--muted-foreground);
 }
 
-.description {
+.footer__subscribe-description {
   margin-bottom: 0.5rem;
 }
 
-.link {
+.footer__link-item {
   text-decoration: none;
 }
 
-.link-list {
+.footer__link-list {
   list-style: none;
 }
 
-.subscribe-title {
+.footer__subscribe-title {
   font-weight: 500;
   color: #1c2024;
   line-height: 20px;
 }
 
-.subscribe-description {
+.footer__subscribe-description {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #60646c;
 }
 
-.subscribe-email {
+.footer__subscribe-email {
   height: 40px;
   border-radius: 12px;
   border: 1px solid #cdced6;
@@ -82,7 +83,7 @@ form {
   gap: 8px;
 }
 
-.subscribe-button {
+.footer__subscribe-button {
   background-color: #f0f0f3;
   color: #60646c;
   font-weight: 500;
@@ -95,17 +96,17 @@ form {
   box-shadow: 0px 1px 2px 0px #0000000d;
 }
 
-.copy {
+.footer__copyright {
   text-align: center;
   padding: 1.5rem 0;
   border-top: 1px solid #d9d9e0;
 }
 
 @media (min-width: 40rem) {
-  .footer-content {
+  .footer__content {
     flex-direction: row;
   }
-  .footer-links {
+  .footer__links {
     flex-wrap: nowrap;
   }
 }
@@ -115,24 +116,24 @@ form {
     width: 90rem;
     padding: 5rem;
   }
-  .footer-content {
+  .footer__content {
     padding: 0 2rem;
   }
 
-  .copy {
+  .footer__copyright {
     padding: 1.5rem 0;
     margin: 0 2rem;
   }
 
-  .footer-content {
+  .footer__content {
     gap: 2rem;
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer-link-item {
+  .footer__link-group {
     width: 14.625rem;
   }
-  .subscribe-email {
+  .footer__subscribe-email {
     width: 335px;
   }
 }
